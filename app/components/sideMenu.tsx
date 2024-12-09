@@ -1,10 +1,17 @@
 import React from 'react';
+import Image from 'next/image';
 
 const SideMenu: React.FC = () => {
   return (
     <div className="fixed top-0 left-0 w-64 p-6 bg-gray-100 border-r border-gray-300 h-screen">
       <div className='flex justify-center mb-6'>
-        <img src="myphoto.jpg" alt="Profile" className="w-26 h-26 rounded-full" />
+        <Image
+          src="myphoto.jpg"
+          alt="Profile"
+          className="rounded-full"
+          width={160}
+          height={160}
+        />
       </div>
       <h2 className="text-2xl mb-6 text-black">Taichi Sekikawa</h2>
       <ul className="list-none p-0">
