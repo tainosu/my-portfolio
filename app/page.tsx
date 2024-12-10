@@ -1,4 +1,6 @@
 import SideMenu from "./components/sideMenu";
+import SkillCard from "./components/skillCard";
+import { skills } from "./data/skills";
 
 export default function Home() {
   return (
@@ -7,7 +9,7 @@ export default function Home() {
         <SideMenu />
       </aside>
       <div className="flex-grow pb-20 ml-64 overflow-auto">
-        <div className="flex flex-col gap-8 px-4 items-center sm:items-start">
+        <div className="flex flex-col gap-8 px-20 items-center sm:items-start">
           <section id="home" className="w-full mt-4 mb-8">
             <h2 className="font-bold text-2xl mb-4">Welcome to MySite!</h2>
           </section>
@@ -25,41 +27,10 @@ export default function Home() {
           {/* スキル */}
           <section id="skill" className="w-full mb-8">
             <h1 className="font-bold text-2xl mb-4">Skills</h1>
-            <p>研究活動ではPython、ROS2（ロボット制御で用いるミドルウェア）を使用しています。</p>
-            <p>長期インターンではTypeScriptやNext.js、PostgreSQLを使用しています。</p>
             <ul className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-4 p-0 list-none">
-              <li className="flex items-center">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" className="w-10 h-10 mr-2" />
-                Python
-              </li>
-              <li className="flex items-center">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ros/ros-original.svg" alt="ROS2" className="w-10 h-10 mr-2"/>
-                ROS2
-              </li>
-              <li className="flex items-center">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-10 h-10 mr-2" />
-                JavaScript
-              </li>
-              <li className="flex items-center">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" className="w-10 h-10 mr-2" />
-                TypeScript
-              </li>
-              <li className="flex items-center">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" className="w-10 h-10 mr-2" />
-                React
-              </li>
-              <li className="flex items-center">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt="Next.js" className="w-10 h-10 mr-2"  />
-                Next.js
-              </li>
-              <li className="flex items-center">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker" className="w-10 h-10 mr-2" />
-                Docker
-              </li>
-              <li className="flex items-center">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" className="w-10 h-10 mr-2" />
-                PostgreSQL
-              </li>
+              {skills.map((skill) => (
+                <SkillCard key={skill.name} skill={skill} />
+              ))}
             </ul>
           </section>
           {/* 経験 */}
