@@ -8,7 +8,8 @@ const SkillSlider: React.FC<SliderProps> = ({ level }) => {
   return (
     <>
       <div className='text-right'>
-        <span>{level}%</span>
+        <span className='text-xl'>{level}</span>
+        %
       </div>
       <Progress
         color="primary"

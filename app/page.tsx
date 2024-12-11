@@ -1,6 +1,8 @@
 import SideMenu from "./components/sideMenu";
 import SkillCard from "./components/skillCard";
 import { skills } from "./data/skills";
+import ExpAccordion from "./components/expAccordion";
+import { experience } from "./data/experience";
 
 export default function Home() {
   return (
@@ -36,7 +38,10 @@ export default function Home() {
           {/* 経験 */}
           <section id="experience" className="w-full mb-8">
             <h1 className="font-bold text-2xl mb-4">Experience</h1>
-            <div className="flex flex-col gap-4">
+            {experience.map((exp) => (
+              <ExpAccordion key={exp.title} experience={exp} />
+            ))}
+            {/* <div className="flex flex-col gap-4">
               <div className="bg-white shadow-md rounded-lg p-4">
                 <h2 className="font-bold text-xl mb-2">基本情報技術者</h2>
                 <p>2021年10月取得</p>
@@ -58,7 +63,7 @@ export default function Home() {
                 <p>2024年9月にマイナビのハッカソンに参加し、AWSを用いたインフラ構築ワークとWeb開発ワークを行いました。</p>
                 <p>チームメンバー4人で協力し、グランプリを獲得できました。</p>
               </div>
-            </div>
+            </div> */}
           </section>
         </div>
         <footer className="flex gap-6 flex-wrap items-center justify-center mt-auto">
