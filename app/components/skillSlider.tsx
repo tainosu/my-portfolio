@@ -14,6 +14,7 @@ const SkillSlider: React.FC<SliderProps> = ({ level }) => {
       <Progress
         color="primary"
         value={level}
+        aria-label='skillLevel'
       />
     </>
   )

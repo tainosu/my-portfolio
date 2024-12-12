@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import SkillSlider from './skillSlider';
 import {
@@ -38,9 +39,11 @@ const SkillCard: React.FC<SkillCardProps> = ({ skills }) => {
       <Divider />
       <CardBody>
         <div className='flex flex-wrap gap-2'>
-          {skills.usage.map((skill) => (
+          {skills.usage.map((skill, index) => (
             <Chip
+              key={index}
               size='sm'
+              aria-label='skillTitle'
             >
               {skill}
             </Chip>
