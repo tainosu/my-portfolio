@@ -40,7 +40,6 @@ const SkillCard: React.FC<SkillCardProps> = ({ skills }) => {
         <div className='flex flex-wrap gap-2'>
           {skills.usage.map((skill) => (
             <Chip
-              // color='primary'
               size='sm'
             >
               {skill}
