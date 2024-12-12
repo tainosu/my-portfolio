@@ -12,11 +12,11 @@ export default function Home() {
       <aside className="fixed w-64 h-screen">
         <SideMenu />
       </aside>
-      <div className="flex-grow pb-20 ml-64 overflow-auto">
+      <div className="flex-grow pb-20 ml-64 mt-6 overflow-auto">
         <div className="flex flex-col gap-8 px-20 items-center sm:items-start">
-          <section id="home" className="w-full mt-4 mb-8">
+          {/* <section id="home" className="w-full mt-4 mb-8">
             <h2 className="font-bold text-2xl mb-4">Welcome to MySite!</h2>
-          </section>
+          </section> */}
           {/* 自己紹介 */}
           <section id="about" className="w-full mb-8">
             <h1 className="font-bold text-2xl mb-4">About Me</h1>
@@ -25,7 +25,7 @@ export default function Home() {
             <p><b>ソーシャルロボット</b>を専攻しており、人と会話するロボットを開発しています。</p>
             <p>長期インターンやハッカソン、自主開発での<b>Web開発</b>もあります。</p>
             <p>趣味は野球観戦と漫画です。コーヒーを豆から淹れることも好きです。</p>
-            <div className="mt-4">
+            <div className="mt-6">
               {abouts.map((about) => (
                 <AboutCard key={about.title} abouts={about} />
               ))}
