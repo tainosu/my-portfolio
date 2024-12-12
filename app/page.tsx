@@ -31,7 +31,7 @@ export default function Home() {
             <h1 className="font-bold text-2xl mb-4">Skills</h1>
             <ul className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-4 p-0 list-none">
               {skills.map((skill) => (
-                <SkillCard key={skill.name} skill={skill} />
+                <SkillCard key={skill.name} skills={skill} />
               ))}
             </ul>
           </section>
