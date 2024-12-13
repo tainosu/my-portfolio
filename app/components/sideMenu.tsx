@@ -14,8 +14,8 @@ const SideMenu: React.FC = () => {
           height={160}
         />
       </div>
-      <h2 className="text-2xl mb-6 text-center font-bold text-black">Taichi Sekikawa</h2>
-      <ul className="list-none p-0">
+      <h2 className="text-2xl mb-6 text-center font-bold text-black font-pacifico">Taichi Sekikawa</h2>
+      <ul className="list-none p-0 ml-3">
         <li className="mb-4 flex items-center">
           <HomeIcon className="w-6 h-6 mr-2" />
           <a href="#home" className="hover:underline hover:text-gray-400 transition duration-300">HOME</a>

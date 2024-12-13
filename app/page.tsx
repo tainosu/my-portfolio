@@ -19,7 +19,7 @@ export default function Home() {
           </section> */}
           {/* 自己紹介 */}
           <section id="about" className="w-full mb-8">
-            <h1 className="font-bold text-2xl mb-4">About Me</h1>
+            <h1 className="font-bold text-2xl mb-4 font-pacifico">About Me</h1>
             <p>はじめまして、<b>関川泰地</b>です。</p>
             <p>現在、<b>豊橋技術科学大学大学院</b> 情報・知能工学専攻に在籍しています。</p>
             <p><b>ソーシャルロボット</b>を専攻しており、人と会話するロボットを開発しています。</p>
@@ -33,7 +33,7 @@ export default function Home() {
           </section>
           {/* スキル */}
           <section id="skill" className="w-full mb-8">
-            <h1 className="font-bold text-2xl mb-4">Skills</h1>
+            <h1 className="font-bold text-2xl mb-4 font-pacifico">Skills</h1>
             <ul className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-4 p-0 list-none">
               {skills.map((skill) => (
                 <SkillCard key={skill.name} skills={skill} />
@@ -41,8 +41,8 @@ export default function Home() {
             </ul>
           </section>
           {/* 経験 */}
-          <section id="experience" className="w-full mb-8">
-            <h1 className="font-bold text-2xl mb-4">Experience</h1>
+          <section id="experience" className="w-full mb-8 ">
+            <h1 className="font-bold text-2xl mb-4 font-pacifico">Experience</h1>
             {experience.map((exp) => (
               <ExpAccordion key={exp.title} experience={exp} />
             ))}

@@ -14,6 +14,13 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        pacifico: ["var(--font-pacifico)"],
+        notoSansJP: ["var(--font-noto-sans-jp)"],
+        yomogi: ["var(--font-yomogi)"],
+        sawarabiGothic: ["var(--font-sawarabi-gothic)"],
+        workSans: ["var(--font-work-sans)"],
+      },
     },
   },
   plugins: [nextui()],
