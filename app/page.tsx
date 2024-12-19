@@ -14,9 +14,9 @@ export default function Home() {
       </aside>
       <div className="flex-grow pb-20 ml-64 mt-6 overflow-auto">
         <div className="flex flex-col gap-8 px-20 items-center sm:items-start">
-          {/* <section id="home" className="w-full mt-4 mb-8">
+          <section id="home" className="w-full mt-4 mb-8 font-pacifico">
             <h2 className="font-bold text-2xl mb-4">Welcome to MySite!</h2>
-          </section> */}
+          </section>
           {/* 自己紹介 */}
           <section id="about" className="w-full mb-8">
             <h1 className="font-bold text-2xl mb-4 font-pacifico">About Me</h1>
